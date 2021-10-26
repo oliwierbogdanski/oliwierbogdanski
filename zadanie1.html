@@ -1,0 +1,43 @@
+
+<html>
+<head>
+
+    <title>FORMULARZ</title>
+</head>
+<body>
+    <form action="">
+<input type="text" name="pole"/>
+<button type="submit">pokaz </button>
+    </form>
+    <div class="wynik"> </div>
+         <script>
+         //odwolujemy sie do formularza(pobieramy obiekt form)
+         const formularz = document.querySelector('form');
+    
+            //pobieramy diva o klasie wynik
+            const wynik = document.querySelector('.wynik');
+
+        //do zdarzenia submit przypisujemy funkcje, ktora przegladarka uruchomi w momencie pojawienia sie tego zdarzenia
+
+        formularz.addEventListener('submit',(e)=> {
+            //zatrzymujemy domyslne działanie przegladarki na formularzu
+            e.preventDefault();
+            //odwolujemy sie do pola w formalarzu
+            const poleWFormularzu = document.querySelector('intput[name="pole"]').value;
+           
+           
+
+            //wyswietlamy w divie wartosc pola
+            wynik.textContent = poleWFormularzu;
+        }); 
+
+
+
+        
+
+
+        </script>
+
+    
+</body>
+</html>
