@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<form>
+    <input type="text" name="pole">
+
+    <button type="submit">pokaż</button>
+
+
+</form>
+
+<div class="wyniik">
+
+</div>
+
+<script>
+
+    //odwołanie do formularza, pobieramy ten formularz
+
+    const formularz = document.querySelector('form');
+
+    //przypisujemy zdarzenie do formularza, które uruchomi funkcję przez przeglądarkę, zdarzenie nazywa się submit
+
+    const div = document.querySelector('.wynik');
+
+    
+    formularz.addEventListener('submit', (even) => {
+
+        even.preventDefault();
+        //odwołujemy się do pola w formularzu i pobieramy jego zawartość
+        //zatrzymujemy domyślną ekcję przeglądarki w wypadku formularza
+        const pole_w_formularzu = document.querySelector('input[name = "pole"]').value;
+
+
+        //div.textContent = pole_w_formularzu;
+
+        if(pole_w_formularzu & 2 == 0)
+        {
+            div.textContent = 'liczba jest parzysta';
+        }
+        else if (pole_w_formularzu & 2 == 1)
+        {
+            div.textContent = 'liczba jest nieparzysta';
+        }
+
+        
+
+    } );
+
+    
+
+
+</script>
+
+
+
+</body>
+
+</html>
