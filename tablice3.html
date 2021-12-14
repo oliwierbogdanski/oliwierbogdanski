@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <input type="number" name="a">
+        <input type="submit" value="potwierdź">
+    </form>
+
+    <div class="tablica"></div>
+
+    <div class="suma"></div>
+    
+    <div class="ilosc0"></div>
+
+    <div class="ilosc"></div>
+
+
+    
+
+    <script>
+
+        const tablica = [];
+
+        const formularz=document.querySelector('form');
+
+        const divTablica = document.querySelector('div[class="tablica"]');
+
+        const divSuma = document.querySelector('div[class="suma"]');
+
+        const divIlosc0 = document.querySelector('div[class="ilosc0"]');
+
+        const divIlosc = document.querySelector('div[class="ilosc"]');
+
+        let ilosc=0;
+
+        let suma=0;
+
+        let ilosc2=0;
+
+        for(let i=0;i<100;i++){
+            tablica[i]=Math.round(Math.random() * 100);
+        }
+
+        
+            divTablica.textContent = tablica.join(', ');
+        
+        for(let i=0;i<100;i++){
+
+            suma=suma+tablica[i];
+            
+        }
+
+        divSuma.textContent = suma;
+
+        for(let i=0;i<100;i++){
+            if(tablica[i]==0){
+                ilosc++;
+            }
+        }
+
+
+        divIlosc0.textContent = ilosc;
+
+        formularz.addEventListener('submit', e => {
+
+            e.preventDefault();
+
+
+            const a = document.querySelector('input[name="a"]').value*1;
+
+            for(let i=0;i<100;i++){
+
+
+                if(tablica[i]==a){
+
+                    ilosc2++;
+
+                }
+            }
+
+            divIlosc.textContent = ilosc2;
+
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

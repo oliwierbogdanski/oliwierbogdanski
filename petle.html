@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="" method="POST">
+            <input type="number" name="koniec">
+            <input type="submit" value="potwierdz">
+        </form>
+
+        <script>
+            const formularz = document.querySelector('form');
+
+            formularz.addEventListener('submit',(e)=> {
+                e.preventDefault();
+
+                const n = document.querySelector('input[name="koniec"]').value*1;
+
+                let parzyste = 0;
+
+                let nieparzyste = 0;
+
+                for(let i=1;i<=n;i++){
+                    if(i%2==0){
+                        parzyste++;
+                    }
+                    else{
+                        nieparzyste++;
+                    }
+                }
+
+                document.write("w przedziale od 1 do " +n+ "jest "+parzyste+" liczb parzystych i " +nieparzyste+ "liczb nieparzystych");
+
+            });
+        </script>
+
+
+    </body>
+</html>
