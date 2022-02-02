@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type= "text" name="imie" />
+    <button> sprawdz</button>
+ <div>
+
+ </div>
+<script>
+const sprawdzImie = function (wprowadzoneImie) {
+const ostatniaLitera = wprowadzoneImie.charAt(wprowadzoneImie.lenght - 1);
+if(ostatniaLitera == 'a') {
+return 'wprowadzone imie zenskie';
+}else {
+
+return ' wprowadzone imie meskie'
+}
+};
+const btn = document.querySelector('button');
+const div = document.querySelector('div');
+btn.addEventListener('click', ()=> {
+const imie= document.querySelector('input[name=imie]').value;
+div.textContent = sprawdzImie(imie);
+};
+</script>
+
+</body>
+</html>
