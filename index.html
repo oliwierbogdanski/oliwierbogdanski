@@ -1,19 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-
-
 <body>
+    <script src="Samochód.js"></script>
     <script>
-        const Liczba1 = prompt('podaj pierwsza liczbe');
-        const Liczba2 = prompt('podaj druga liczbe');
-        const Liczba3 = prompt('podaj rzecia liczbe');
+        const audi = new Samochod('Audi','A3',12000, 2003,15);
+        console.log(audi.wiek());
+        const kia = new Samochod('KIA','Ceed',18000,2010,8);
+        console.log(kia.wiek());
+        const asso = new Komis('asso');
+        console.log(asso);
+        asso.dodajSamochod(kia);
+        console.log(asso);
+        asso.dodajSamochod(audi);
 
-        document.write('<div>Podane Liczby to <div>');
-        document.write('<div> Liczba 1 = ' + Liczba1 +' , liczba2 ='+ Liczba2 + ', Liczba 3 = ' + Liczba3 + '</div>');
-
+        const fordzik = new 
     </script>
+    
 </body>
 </html>
