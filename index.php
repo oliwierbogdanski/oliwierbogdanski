@@ -12,16 +12,26 @@
          pierwszy raz w php 
     </h1>
     <?php 
-    echo 'Chciałem być szefem
-    I nigdy więcej zapierdalać
-    Machać moim wrogom świeżym cashem
-    I dziś siedzę se tu jak ten prezes
-    Uhhhhh
-    Z złotym rolexem
-    Mama mówiła synku uważaj bo
-    To niebezpieczne
-    Zbyt wielu karaluchów jest na świecie
-    Dlatego dziś na deser będzie Desert';
+    $liczba = 3;
+
+
+
+    switch ($liczba)
+    {
+        case 1;
+        echo 'poniedzalek'
+        break;
+        case 2;
+        echo 'wtorek'
+        break;
+        case 3;
+        echo 'sroda'
+        break;
+        default:
+        echo 'co to jest HM?';
+    
+    }
+
      ?>
 </body>
 </html>
