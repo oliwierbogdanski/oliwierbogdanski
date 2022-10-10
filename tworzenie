@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: yellowgreen;
+}
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.szukaj {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tytul {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 8%;
+    top: 12% ;
+}
+
+.opcja1 {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    left: 8%;
+    top: 45% ;
+    background-color: orange;
+    border: solid black 3px;
+}
+
+.opcja2 {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    left: 30%;
+    top: 45% ;
+    background-color: orange;
+    border: solid black 3px;
+}
+
+.zdjecie1 {
+    width: 480px;
+    height: 320px;
+    position: absolute;
+    right: 10%;
+    top: 15% ;
+}
+
+.aktualnosci {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 40%;
+    top: 60% ;
+}
+
+.aktualnosci1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 75% ;
+}
+
+.aktualnosci2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 40%;
+    top: 75% ;
+}
+
+.aktualnosci3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 10%;
+    top: 75% ;
+}
+
+.przycisk1 {
+    position: absolute;
+    left: 30%; 
+    background-color: blue;
+}
+
+.przycisk2 {
+    position: absolute;
+    left: 30%; 
+    background-color: blue;
+}
+
+.przycisk3 {
+    position: absolute;
+    right: 40%; 
+    background-color: blue;
+}
+
+.galeria {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 42%;
+    top: 115% ;
+}
+
+.zdjecie2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    top: 130% ;
+}
+
+.zdjecie3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 32%;
+    top: 130% ;
+}
+
+.zdjecie4 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 32%;
+    top: 130% ;
+}
+
+.zdjecie5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 10%;
+    top: 130% ;
+}
+
+.przycisk4 {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    right: 48%;
+    top: 160% ;
+}
+
+.footer1 {
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    left: 40px;
+    top: 180% ;
+}
+
+.footer2 {
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    right: 40px;
+    top: 180% ;
+}
+
+@media (max-width: 500px) {
+    
+    body {
+        background-color: yellowgreen;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+        <ul>
+        <li><a href="link">link 1  |  </a></li>
+        <li><a href="link">link 2  |  </a></li>
+        <li><a href="link">link 3  |  </a></li>
+        <li><a href="link">link 4  |  </a></li>
+        </nav>
+    
+        <div class="szukaj">
+        <input type="search" role="search">
+        </div>
+
+    </section>
+
+    <div class="tytul">
+        <h1>Witaj na stronie</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+        </p>
+    </div>
+
+    <button class="opcja1" type="submit" name="przycisk1" value="">Więcej</button>
+
+    <button class="opcja2" type="submit" name="przycisk1" value="">Więcej</button>
+
+    <h2><a><img class="zdjecie1"src = "https://cdn.pixabay.com/photo/2022/09/13/13/47/animal-7451968_960_720.jpg"/></a></h2>
+
+    <div class="aktualnosci">
+        <h1>Aktualności</h1>
+    </div>
+
+    <div class="aktualnosci1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+        </p>
+        <button class="przycisk1" type="submit" name="przycisk1" value="">Więcej</button>
+    </div>
+
+    <div class="aktualnosci2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+        </p>
+        <button class="przycisk2" type="submit" name="przycisk2" value="">Więcej</button>
+    </div>
+
+    <div class="aktualnosci3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+        </p>
+        <button class="przycisk3" type="submit" name="przycisk3" value="">Więcej</button>
+    </div>
+
+    <div class="galeria">
+        <h1>Galeria</h1>
+    </div>
+
+    <div class=zdjecia>
+    <h1><a><img class="zdjecie2" src = "https://cdn.pixabay.com/photo/2016/03/27/22/22/fox-1284512_960_720.jpg"/></a></h1>
+    <h2><a><img class="zdjecie3" src = "https://cdn.pixabay.com/photo/2019/06/05/08/37/dog-4253238_960_720.jpg"/></a></h2>
+    <h3><a><img class="zdjecie4" src = "https://cdn.pixabay.com/photo/2022/08/22/10/28/tihany-7403355_960_720.jpg"/></a></h3>
+    <h4><a><img class="zdjecie5" src = "https://cdn.pixabay.com/photo/2022/09/26/23/27/horse-7481726_960_720.jpg"/></a></h4>
+        <button class="przycisk4" type="submit" name="przycisk3" value="">Zobacz więcej zdjęć</button>
+    </div>
+
+    <footer class="footer1">
+        <p>Adres</p>
+    </footer>
+
+    <footer class="footer2">
+        <p>Imię i nazwisko (wpisz swoje)</p>
+    </footer>
+
+
+    
+
+
+
+    
+</body>
+</html>
