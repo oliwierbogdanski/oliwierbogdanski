@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string imie, nazwisko, miejsce,dlugosc;
+
+
+cout << "Podaj imie:" ;
+cin>>imie;
+
+cout << "Podaj nazwisko:" ;
+cin>>nazwisko;
+int wiek;
+
+cout << "Podaj wiek:" ;
+cin>>wiek;
+
+cout << "Podaj miejsce zamieszkania:(jezeli 2członowa nazwa wpisz miedzy '_') " ;
+cin>>miejsce;
+
+cout << "podaj dlugosc pobytu";
+cin>>dlugosc;
+
+ if(wiek < 2003)
+    cout<<" nie mozemy zarezerwowac pokoju dla osoby ponizej 18 lat";
+ else
+    cout<<"----------- REZERWACJA-----------";
+cout << " imie:" imie << ;
+cout << "nazwisko" nazwisko <<;
+cout << "wiek:" wiek <<;
+cout << "dlugosc pobytu:" dlugosc<<;
+
+
+    return 0;
+}
